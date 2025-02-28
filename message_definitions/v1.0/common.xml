@@ -7501,6 +7501,27 @@
       <field type="uint8_t" name="num_ids">number of IDs in filter list</field>
       <field type="uint16_t[16]" name="ids">filter IDs, length num_ids</field>
     </message>
+    <!-- Envgo specific messages -->
+    <message id="456" name="ENVGO_STATUS">
+      <description>Contains data for the UI.</description>
+      <field type="uint8_t" name="desired_speed" units="kph">Current desired speed</field>
+      <field type="uint8_t" name="set_height" units="cm">Set height above water while foiling</field>
+      <field type="uint8_t" name="sport_mode">Sport mode levels</field>
+      <field type="uint16_t" name="estimated_range_pessimistic" units="km">Estimated range assuming worst case scenario</field>
+      <field type="uint16_t" name="estimated_range_optimistic" units="km">Estimated range assuming best case scenario</field>
+      <field type="uint16_t" name="estimated_range_realistic" units="km">Estimated range using driver's recent performance</field>
+      <field type="uint8_t" name="gear_state">Gear states</field>
+      <field type="uint8_t" name="struts_deployment_front" units="%">Represents the percentage that front struts are deployed. 100% = fully deployed</field>
+      <field type="uint8_t" name="struts_deployment_back" units="%">Represents the percentage that back struts are deployed. 100% = fully deployed</field>
+      <field type="uint8_t" name="can_deploy_foils">1 if foils can be deployed</field>
+      <field type="uint8_t" name="can_start_bitmask">Represents states necessary to start such as: dead man's switch, emergency stop</field>
+      <field type="uint8_t" name="light_mode_bitmask">Bitmask to represent states of lights</field>
+      <field type="uint8_t" name="bilge_pump_bitmask">Starting from msb gives status of the bilge pumps</field>
+    </message>
+    <message id="457" name="ENVGO_DISPLAY_CONTROL">
+      <description>Inputs from the Display UI.</description>
+      <field type="uint8_t" name="bilge_pumps_bitmask">Set bilge pump states</field>
+    </message>
     <!-- Rover specific messages -->
     <message id="9000" name="WHEEL_DISTANCE">
       <description>Cumulative distance traveled for each reported wheel.</description>
