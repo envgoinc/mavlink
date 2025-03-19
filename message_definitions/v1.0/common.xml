@@ -7504,6 +7504,7 @@
     <!-- Envgo specific messages -->
     <message id="456" name="ENVGO_STATUS">
       <description>Contains data for the UI.</description>
+      <field type="uint8_t" name="current_speed" units="kph">Current speed</field>
       <field type="uint8_t" name="desired_speed" units="kph">Current desired speed</field>
       <field type="uint8_t" name="set_height" units="cm">Set height above water while foiling</field>
       <field type="uint8_t" name="sport_mode">Sport mode levels</field>
@@ -7517,6 +7518,7 @@
       <field type="uint8_t" name="can_start_bitmask">Represents states necessary to start such as: dead man's switch, emergency stop</field>
       <field type="uint8_t" name="light_mode_bitmask">Bitmask to represent states of lights</field>
       <field type="uint8_t" name="bilge_pump_bitmask">Starting from msb gives status of the bilge pumps</field>
+      <field type="uint16_t" name="battery_power" units="kW">Power drawn from the battery</field>
     </message>
     <message id="457" name="ENVGO_DISPLAY_CONTROL">
       <description>Inputs from the Display UI.</description>
