@@ -7520,6 +7520,7 @@
       <field type="uint8_t" name="bilge_pump_bitmask">Starting from msb gives status of the bilge pumps</field>
       <field type="uint16_t" name="battery_power" units="kW">Power drawn from the battery</field>
       <field type="uint8_t" name="arming_bitmask">Bitmask representing arming status of system: Bit 0: Armed, Bit 1: Ready to arm, Bit 2: Warnings present</field>
+      <field type="float" name="haw" units="m">Represents height above water for the boat</field>
     </message>
     <message id="457" name="ENVGO_DISPLAY_CONTROL">
       <description>Inputs from the Display UI.</description>
