@@ -7516,8 +7516,8 @@
       <field type="uint8_t" name="struts_deployment_back" units="%">Represents the percentage that back struts are deployed. 100% = fully deployed</field>
       <field type="uint8_t" name="can_deploy_foils">1 if foils can be deployed</field>
       <field type="uint8_t" name="can_start_bitmask">Represents states necessary to start such as: dead man's switch, emergency stop</field>
-      <field type="uint8_t" name="light_mode_bitmask">Bitmask to represent states of lights</field>
-      <field type="uint8_t" name="bilge_pump_bitmask">Starting from msb gives status of the bilge pumps</field>
+      <field type="uint8_t" name="steering_wheel_buttons_bitmask">Bit 0: Horn, Bit 1: Light, Bit 2: Outside Up, Bit 3: Outside Down, Bit 4: Inside Up, Bit 5: Inside Down</field>
+      <field type="uint8_t" name="power_channel_bitmask">Status of power channels Bit 0: Bilge 1, Bit 1: Bilge 2, Bit 2: Bilge 3, Bit 3: Nav lights, Bit 4: Anchor light</field>
       <field type="uint16_t" name="battery_power" units="kW">Power drawn from the battery</field>
       <field type="uint8_t" name="arming_bitmask">Bitmask representing arming status of system: Bit 0: Armed, Bit 1: Ready to arm, Bit 2: Warnings present</field>
       <field type="float" name="haw" units="m">Represents height above water for the boat</field>
@@ -7525,7 +7525,7 @@
     </message>
     <message id="457" name="ENVGO_DISPLAY_CONTROL">
       <description>Inputs from the Display UI.</description>
-      <field type="uint8_t" name="bilge_pumps_bitmask">Set bilge pump states</field>
+      <field type="uint8_t" name="power_channel_cmd_bitmask">Set power channels on / off Bit 0: Bilge 1, Bit 1: Bilge 2, Bit 2: Bilge 3, Bit 3: Nav lights, Bit 4: Anchor light</field>
     </message>
     <!-- Rover specific messages -->
     <message id="9000" name="WHEEL_DISTANCE">
