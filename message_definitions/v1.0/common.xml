@@ -7523,7 +7523,7 @@
       <field type="uint8_t" name="act_state">Actual state of the system: 0 accessory, 1 enabled, 2 run, 3 fault </field>
       <field type="uint8_t" name="cmd_mode">Commanded mode of the system as requested by user: 0 trailer, 1 planing, 2 foiling.  Bit 7 can be on or off indicating virtual anchor</field>
       <field type="uint8_t" name="act_mode">Actual mode of the system: 0 trailer, 1 planing, 2 foiling.  Bit 6 can be on or off indicating mode transition.  Bit 7 can be on or off indicating virtual anchor</field>
-      <field type="uint32_t" name="warnings">Bit 0: Throttle not in neutral, Bit 1: Joystick not in neutral, Bit 2: Too shallow to deploy foils, Bit 3: DMS, Bit 4: EMCY, Bit 5: Arming warnings, Bit 6: Not ready to arm, Bit 7: Too fast to deploy foils</field>
+      <field type="uint32_t" name="warnings">Bit 0: Too shallow to deploy foils, Bit 1: Too fast to deploy foils, Bit 2: Throttle not in neutral, Bit 3: Joystick not in neutral,  Bit 4: DMS, Bit 5: EMCY, Bit 6: Arming warnings, Bit 7: Not ready to arm.  Warnings in order of priority - lsb is highest priority</field>
       <field type="uint32_t" name="faults">Bit 0: LV Battery, Bit 1: HV Battery, Bit 2: port drive, Bit 3: stbd drive, Bit 4: front actuator, Bit 5: port actuator, Bit 6: stbd actuator</field>
     </message>
     <message id="457" name="ENVGO_DISPLAY_CONTROL">
