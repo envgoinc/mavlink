@@ -7511,19 +7511,19 @@
       <field type="uint16_t" name="est_range_pes" units="km">Estimated range assuming worst case scenario</field>
       <field type="uint16_t" name="est_range_opt" units="km">Estimated range assuming best case scenario</field>
       <field type="uint16_t" name="est_range_real" units="km">Estimated range using driver's recent performance</field>
-      <field type="uint8_t" name="cmd_gear_state">Gear states: 0 reverse, 1 neutral, 2 forward </field>
-      <field type="uint8_t" name="act_gear_state">Gear states: 0 reverse, 1 neutral, 2 forward </field>
+      <field type="uint8_t" name="cmd_gear">Gear: 0 neutral, 1 forward, 2 reverse </field>
+      <field type="uint8_t" name="act_gear">Gear: 0 neutral, 1 forward, 2 reverse </field>
       <field type="uint8_t" name="est_strut_bow" units="%">Represents the percentage that bow strut is deployed. 100% = fully deployed</field>
       <field type="uint8_t" name="est_strut_stern" units="%">Represents the percentage that stern struts are deployed. 100% = fully deployed</field>
       <field type="uint8_t" name="act_steer_buttons">Bit 0: Horn, Bit 1: Light, Bit 2: Outside Up, Bit 3: Outside Down, Bit 4: Inside Up, Bit 5: Inside Down</field>
       <field type="uint8_t" name="act_power_channel">Status of power channels Bit 0: Bilge 1, Bit 1: Bilge 2, Bit 2: Bilge 3, Bit 3: Nav lights, Bit 4: Anchor light</field>
       <field type="uint16_t" name="est_battery_power" units="kW">Power drawn from the battery</field>
       <field type="int8_t" name="est_foil_aoa" units="degrees">Represents angle of the rear foil (in degrees x10). Negative when retracted, positive when deployed.</field>
-      <field type="uint8_t" name="cmd_state">Commanded state of the system as determined by ignition: 0 accessory, 2 run</field>
-      <field type="uint8_t" name="act_state">Actual state of the system: 0 accessory, 1 enabled, 2 run, 3 fault </field>
+      <field type="uint8_t" name="cmd_state">Commanded state of the system as determined by ignition: 0 accessory, 1 run</field>
+      <field type="uint8_t" name="act_state">Actual state of the system: 0 accessory, 1 run, 2 fault </field>
       <field type="uint8_t" name="cmd_mode">Commanded mode of the system as requested by user: 0 trailer, 1 planing, 2 foiling.  Bit 7 can be on or off indicating virtual anchor</field>
       <field type="uint8_t" name="act_mode">Actual mode of the system: 0 trailer, 1 planing, 2 foiling.  Bit 5 can be on or off indicating mode transition, Bit 6 would indicate joystick mode, Bit 7 can be on or off indicating virtual anchor</field>
-      <field type="uint32_t" name="warnings">Bit 0: Too shallow to deploy foils, Bit 1: Too fast to deploy foils, Bit 2: Throttle not in neutral, Bit 3: Joystick not in neutral,  Bit 4: DMS, Bit 5: EMCY, Bit 6: Arming warnings, Bit 7: Not ready to arm.  Warnings in order of priority - lsb is highest priority</field>
+      <field type="uint32_t" name="warnings">Bit 0: Too shallow to deploy foils, Bit 1: Too fast to deploy foils, Bit 2: Throttle not in neutral, Bit 3: Joystick not in neutral,  Bit 4: DMS, Bit 5: EMCY, Bit 6: Arming not possible.  Warnings in order of priority - lsb is highest priority</field>
       <field type="uint32_t" name="faults">Bit 0: LV Battery, Bit 1: HV Battery, Bit 2: port drive, Bit 3: stbd drive, Bit 4: front actuator, Bit 5: port actuator, Bit 6: stbd actuator</field>
     </message>
     <message id="457" name="ENVGO_DISPLAY_CONTROL">
