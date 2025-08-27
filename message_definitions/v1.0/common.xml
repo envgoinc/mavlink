@@ -7524,7 +7524,7 @@
       <field type="uint8_t" name="cmd_mode">Commanded mode of the system as requested by user: 0 trailer, 1 planing, 2 foiling.  Bit 7 can be on or off indicating virtual anchor</field>
       <field type="uint8_t" name="act_mode">Actual mode of the system: 0 trailer, 1 planing, 2 foiling, 3 inbetween, Bit 6 would indicate joystick mode, Bit 7 can be on or off indicating virtual anchor</field>
       <field type="uint8_t" name="safety_buttons">Bit 0: DMS Unplugged, Bit 1: Emergency button activated</field>
-      <field type="uint8_t" name="strut_warnings">Bit 0: Switch not held to move foils, Bit 1: Too shallow to deploy foils, Bit 1: Too fast to move foils, Bit 2: Switch not held to deploy foils; Bit 3: Throttle not in neutral, Bit 4: Joystick not in neutral, Bit 5: Arming not possible.  Warnings in order of priority - lsb is highest priority</field>
+      <field type="uint8_t" name="strut_warnings">Bit 0: Switch not held to move foils, Bit 1: Too shallow to deploy foils, Bit 1: Too fast to move foils, Bit 2: Switch not held to deploy foils.  Warnings in order of priority - lsb is highest priority</field>
       <field type="uint8_t" name="run_warnings">Bit 0: Throttle not in neutral, Bit 1: Joystick not in neutral, Bit 2: Arming not possible.  Warnings in order of priority - lsb is highest priority</field>
       <field type="uint32_t" name="faults">Bit 0: LV Battery, Bit 1: HV Battery, Bit 2: port drive, Bit 3: stbd drive, Bit 4: front actuator, Bit 5: port actuator, Bit 6: stbd actuator</field>
     </message>
