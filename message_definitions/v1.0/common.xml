@@ -7521,7 +7521,7 @@
       <field type="int8_t" name="est_foil_aoa" units="degrees">Represents angle of the rear foil (in degrees x10). Negative when retracted, positive when deployed.</field>
       <field type="uint8_t" name="cmd_state">Commanded state of the system as determined by ignition: 0 accessory, 1 run</field>
       <field type="uint8_t" name="act_state">Actual state of the system: 0 accessory, 1 run, 2 fault </field>
-      <field type="uint8_t" name="cmd_mode">Commanded mode of the system as requested by user: 0 trailer, 1 planing, 2 foiling.  Bit 7 can be on or off indicating virtual anchor</field>
+      <field type="uint8_t" name="cmd_mode">Commanded mode of the system as requested by user: 0 trailer, 1 planing, 2 foiling. Bit 6 would indicate joystick mode, Bit 7 can be on or off indicating virtual anchor</field>
       <field type="uint8_t" name="act_mode">Actual mode of the system: 0 trailer, 1 planing, 2 foiling, 3 inbetween, Bit 6 would indicate joystick mode, Bit 7 can be on or off indicating virtual anchor</field>
       <field type="uint8_t" name="safety_buttons">Bit 0: DMS Unplugged, Bit 1: Emergency button activated</field>
       <field type="uint8_t" name="strut_warnings">Bit 0: Switch not held to move foils, Bit 1: Too fast to move foils, Bit 2: Too shallow water to deploy foils.  Warnings in order of priority - lsb is highest priority</field>
