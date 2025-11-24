@@ -7533,6 +7533,41 @@
       <field type="uint8_t" name="power_channel_cmd_bitmask">Set power channels on / off Bit 0: Bilge 1, Bit 1: Bilge 2, Bit 2: Bilge 3, Bit 3: Nav lights, Bit 4: Anchor light</field>
       <field type="int8_t" name="cmd_foil_aoa">Commanded angle of attach of the rear foil (in degrees x10) when foil not in trailer mode</field>
     </message>
+    <message id="458" name="ENVGO_VIRTUAL_BUMPERS">
+      <description>Inputs from the Display UI.</description>
+      <field type="uint16_t" name="distance_11_25_deg_ccw" units="cm">Distance sample 0 (RPDO1 slot 0, CCW from bow).</field>
+      <field type="uint16_t" name="distance_22_50_deg_ccw" units="cm">Distance sample 1.</field>
+      <field type="uint16_t" name="distance_33_75_deg_ccw" units="cm">Distance sample 2.</field>
+      <field type="uint16_t" name="distance_45_00_deg_ccw" units="cm">Distance sample 3.</field>
+      <field type="uint16_t" name="distance_56_25_deg_ccw" units="cm">Distance sample 4.</field>
+      <field type="uint16_t" name="distance_67_50_deg_ccw" units="cm">Distance sample 5.</field>
+      <field type="uint16_t" name="distance_78_75_deg_ccw" units="cm">Distance sample 6.</field>
+      <field type="uint16_t" name="distance_90_00_deg_ccw_ccw" units="cm">Distance sample 7.</field>
+      <field type="uint16_t" name="distance_101_25_deg_ccw" units="cm">Distance sample 8.</field>
+      <field type="uint16_t" name="distance_112_50_deg_ccw" units="cm">Distance sample 9.</field>
+      <field type="uint16_t" name="distance_123_75_deg_ccw" units="cm">Distance sample 10.</field>
+      <field type="uint16_t" name="distance_135_00_deg_ccw" units="cm">Distance sample 11.</field>
+      <field type="uint16_t" name="distance_146_25_deg_ccw" units="cm">Distance sample 12.</field>
+      <field type="uint16_t" name="distance_157_50_deg_ccw" units="cm">Distance sample 13.</field>
+      <field type="uint16_t" name="distance_168_75_deg_ccw" units="cm">Distance sample 14.</field>
+      <field type="uint16_t" name="distance_180_00_deg_ccw" units="cm">Distance sample 15.</field>
+      <field type="uint16_t" name="distance_191_25_deg_ccw" units="cm">Distance sample 16.</field>
+      <field type="uint16_t" name="distance_202_50_deg_ccw" units="cm">Distance sample 17.</field>
+      <field type="uint16_t" name="distance_213_75_deg_ccw" units="cm">Distance sample 18.</field>
+      <field type="uint16_t" name="distance_225_00_deg_ccw" units="cm">Distance sample 19.</field>
+      <field type="uint16_t" name="distance_236_25_deg_ccw" units="cm">Distance sample 20.</field>
+      <field type="uint16_t" name="distance_247_50_deg_ccw" units="cm">Distance sample 21.</field>
+      <field type="uint16_t" name="distance_258_75_deg_ccw" units="cm">Distance sample 22.</field>
+      <field type="uint16_t" name="distance_270_00_deg_ccw" units="cm">Distance sample 23.</field>
+      <field type="uint16_t" name="distance_281_25_deg_ccw" units="cm">Distance sample 24.</field>
+      <field type="uint16_t" name="distance_292_50_deg_ccw" units="cm">Distance sample 25.</field>
+      <field type="uint16_t" name="distance_303_75_deg_ccw" units="cm">Distance sample 26.</field>
+      <field type="uint16_t" name="distance_315_00_deg_ccw" units="cm">Distance sample 27.</field>
+      <field type="uint16_t" name="distance_326_25_deg_ccw" units="cm">Distance sample 28.</field>
+      <field type="uint16_t" name="distance_337_50_deg_ccw" units="cm">Distance sample 29.</field>
+      <field type="uint16_t" name="distance_348_75_deg_ccw" units="cm">Distance sample 30.</field>
+      <field type="uint16_t" name="distance_360_00_deg_ccw" units="cm">Distance sample 31.</field>
+    </message>
     <!-- Rover specific messages -->
     <message id="9000" name="WHEEL_DISTANCE">
       <description>Cumulative distance traveled for each reported wheel.</description>
