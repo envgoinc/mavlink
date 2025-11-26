@@ -7542,7 +7542,7 @@
       <field type="uint16_t" name="distance_56_25_deg_ccw" units="cm">Distance sample 4.</field>
       <field type="uint16_t" name="distance_67_50_deg_ccw" units="cm">Distance sample 5.</field>
       <field type="uint16_t" name="distance_78_75_deg_ccw" units="cm">Distance sample 6.</field>
-      <field type="uint16_t" name="distance_90_00_deg_ccw_ccw" units="cm">Distance sample 7.</field>
+      <field type="uint16_t" name="distance_90_00_deg_ccw" units="cm">Distance sample 7.</field>
       <field type="uint16_t" name="distance_101_25_deg_ccw" units="cm">Distance sample 8.</field>
       <field type="uint16_t" name="distance_112_50_deg_ccw" units="cm">Distance sample 9.</field>
       <field type="uint16_t" name="distance_123_75_deg_ccw" units="cm">Distance sample 10.</field>
