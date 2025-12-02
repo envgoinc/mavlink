@@ -7533,6 +7533,10 @@
       <field type="uint8_t" name="power_channel_cmd_bitmask">Set power channels on / off Bit 0: Bilge 1, Bit 1: Bilge 2, Bit 2: Bilge 3, Bit 3: Nav lights, Bit 4: Anchor light</field>
       <field type="int8_t" name="cmd_foil_aoa">Commanded angle of attach of the rear foil (in degrees x10) when foil not in trailer mode</field>
     </message>
+    <message id="459" name="ENVGO_STRUT_CONTROL">
+      <description>Strut position inputs from the Strut Control UI.</description>
+      <field type="uint8_t" name="cmd_strut_state">Commanded deployment of the foils. 1 = EXTEND. 2 = RETRACT. </field>
+    </message>
     <!-- Rover specific messages -->
     <message id="9000" name="WHEEL_DISTANCE">
       <description>Cumulative distance traveled for each reported wheel.</description>
