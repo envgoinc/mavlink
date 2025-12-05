@@ -7533,6 +7533,12 @@
       <field type="uint8_t" name="power_channel_cmd_bitmask">Set power channels on / off Bit 0: Bilge 1, Bit 1: Bilge 2, Bit 2: Bilge 3, Bit 3: Nav lights, Bit 4: Anchor light</field>
       <field type="int8_t" name="cmd_foil_aoa">Commanded angle of attach of the rear foil (in degrees x10) when foil not in trailer mode</field>
     </message>
+    <message id="458" name="ENVGO_VIRTUAL_BUMPERS">
+      <description>Radial distance measurements around the boat.</description>
+      <field type="uint16_t" name="start_angle">The angle (degrees*100) of the first measurement in the array where CCW is positive.</field>
+      <field type="uint16_t" name="step_deg">The step angle (degrees*100) in between measurements.</field>
+      <field type="uint16_t[32]" name="radial_measurements_CCW">Thirty-two evenly spaced radial (CCW) distance measurements around the boat in cm. </field>
+    </message>
     <!-- Rover specific messages -->
     <message id="9000" name="WHEEL_DISTANCE">
       <description>Cumulative distance traveled for each reported wheel.</description>
