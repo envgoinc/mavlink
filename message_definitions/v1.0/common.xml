@@ -7536,6 +7536,7 @@
     <message id="458" name="ENVGO_VIRTUAL_BUMPERS">
       <description>Radial distance measurements around the boat.</description>
       <field type="uint16_t" name="start_angle">The angle (degrees*100) of the first measurement in the array where CCW is positive.</field>
+      <field type="uint16_t" name="step_deg">The step angle (degrees*100) in between measurements.</field>
       <field type="uint16_t[32]" name="radial_measurements_CCW">Thirty-two evenly spaced radial (CCW) distance measurements around the boat in cm. </field>
     </message>
     <!-- Rover specific messages -->
