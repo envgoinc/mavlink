@@ -7534,8 +7534,8 @@
       <field type="int8_t" name="cmd_foil_aoa">Commanded angle of attach of the rear foil (in degrees x10) when foil not in trailer mode</field>
     </message>
     <message id="459" name="ENVGO_STEERING_WHEEL_BUTTONS">
-      <description>ADD DESCRIPTION.</description>
-      <field type="uint8_t" name="steering_wheel_buttons_bitmask">ADD DESCRIPTION</field>
+      <description>Provides a way to send steering wheel button bitmask over MAVLink instead of CAN/NMEA2000. The layout matches the raw CAN bit definitions so the driver can remap them into the PX4 uORB topic.</description>
+      <field type="uint8_t" name="steering_wheel_buttons_bitmask">Raw steering wheel button bitmask (CAN layout): Bit 1 Light, Bit 2 Horn, Bit 3 Outside Down, Bit 5 Inside Down, Bit 6 Outside Up, Bit 7 Inside Up.</field>
     </message>
     <!-- Rover specific messages -->
     <message id="9000" name="WHEEL_DISTANCE">
