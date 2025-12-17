@@ -7539,6 +7539,10 @@
       <field type="uint16_t" name="step_deg">The step angle (degrees*100) in between measurements.</field>
       <field type="uint16_t[32]" name="radial_measurements_CCW">Thirty-two evenly spaced radial (CCW) distance measurements around the boat in cm. </field>
     </message>
+    <message id="459" name="ENVGO_STEERING_WHEEL_BUTTONS">
+      <description>Provides a way to send steering wheel button bitmask over MAVLink instead of CAN/NMEA2000.</description>
+      <field type="uint8_t" name="steering_wheel_buttons_bitmask">Raw steering wheel button bitmask: Bit 0 Horn, Bit 1 Light, Bit 2 Outside Up, Bit 3 Outside Down, Bit 4 Inside Up, Bit 5 Inside Down.</field>
+    </message>
     <!-- Rover specific messages -->
     <message id="9000" name="WHEEL_DISTANCE">
       <description>Cumulative distance traveled for each reported wheel.</description>
